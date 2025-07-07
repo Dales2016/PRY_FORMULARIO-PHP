@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Completo</title>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="../PRY_PhP/lib/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+
+    <!--JQuerry-->
+    <script src="../PRY_PhP/lib/jquery/jquery-3.7.1.min.js"></script> 
+
+    <!--Bootstrap JS-->
+    <script src="../PRY_PhP/lib/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+</head>
+<body class="container mt-4">
+    <h2>Formato completo con tipos de input</h2>
+    <form action="server.php" method="post">
+
+<div class="mb-3">
+     <label for="nombre" class="form-label">Nombre:</label>
+     <input type="text" class="form-control" id="nombre" name="nombre">
+</div>
+
+<div class="mb-3">
+    <label for="email" class="form-label">Correo Electronico:</label>
+    <input type="email" class="form-control" id="email" name="email">
+</div>
+
+<div class="mb-3">
+     <label for="url" class="form-label">Sitio Web:</label>
+     <input type="url" class="form-control" id="url" name="url">
+</div>
+
+<div class="mb-3">
+    <label for="telefono" class="form-label">Telefono:</label>
+    <input type="tel" class="form-control" id="telefono" name="telefono">
+</div>
+   
+<div class="mb-3">
+    <label for="numero" class="form-label">Numero:</label>
+    <input type="number" class="form-control" id="numero" name="numero">
+</div>
+
+<div class="mb-3">
+    <label for="rango" class="form-label">Rango:</label>
+    <input type="range" class="form-range" id="rango" name="rango">
+</div>
+
+<div class="mb-3">
+    <label for="color" class="form-label">Color Favorito:</label>
+    <input type="color" class="form-control form-control-color" id="color" name="color">
+</div>
+
+<div class="mb-3">
+    <label for="fecha" class="form-label">Fecha:</label>
+    <input type="date" class="form-control" id="fecha" name="fecha">
+</div>
+
+<div class="mb-3">
+   <label for="hora" class="form-label">Hora:</label>
+   <input type="time" class="form-control" id="hora" name="hora">
+</div>
+
+<div class="mb-3">
+   <label for="fechahora" class="form-label">Fecha y hora:</label>
+   <input type="datetime-local" class="form-control" id="fechahora" name="fechahora">
+</div>
+
+<div class="mb-3">
+   <label for="mes" class="form-label">Mes:</label>
+   <input type="month" class="form-control" id="mes" name="mes">
+</div>
+
+<div class="mb-3">
+   <label for="semana" class="form-label">Semana:</label>
+   <input type="week" class="form-control" id="semana" name="semana">
+</div>
+
+<div class="mb-3">
+   <label for="busqueda" class="form-label">Buscar:</label>
+   <input type="search" class="form-control" id="busqueda" name="busqueda">
+</div>
+
+<div class="mb-3">
+   <label for="archivo" class="form-label">Subir Archivo:</label>
+   <input type="file" class="form-control" id="archivo" name="archivo">
+</div>
+
+<div class="mb-3">
+   <label class="form-label">Genero:</label><br>
+   <input type="radio" id="masculino" name="genero" value="Masculino">
+   <label for="masculino">Masculino</label><br>
+   <input type="radio" id="femenino" name="genero" value="Femenino">
+   <label for="femenino">Femenino</label>
+</div>
+
+<div class="mb-3">
+   <label for="pais" class="form-label">Pais:</label>
+   <select class="form-select" id="pais" name="pais">
+      <option value="Ecuador">Ecuador</option>
+      <option value="Panama">Panama</option>
+      <option value="España">España</option>
+   </select>
+</div>
+
+<div class="mb-3">
+     <label class="form-label">Afinidad:</label><br>
+    <input type="checkbox" name="interes[]" value="Tecnologia">  Tecnologia<br>
+    <input type="checkbox" name="interes[]" value="Deportes"> Deportes<br>
+    <input type="checkbox" name="interes[]" value="Musica"> Musica
+</div>
+
+<div class="mb-3">
+    <label for="comentario" class="form-label">Comentarios:</label>
+    <textarea class="form-control" id="comentario" name="comentario" rows="3"></textarea>
+</div>
+
+<input type="hidden" name="oculto" value="dato_oculto">
+
+<button type="submit" class="btn btn-success">Enviar</button>
+<button type="reset" class="btn btn-secondary">Limpiar</button>
+
+    </form>
+    
+</body>
+</html>
